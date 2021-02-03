@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Cube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WebGL Cube</h1>
+        <div class="painel">
+            <div class="painelsection">
+                <div class="gauge">
+                    <p>ZNEAR</p>
+                    <input id="ZNEAR" type="range" min="0.1" max="50.0" value="1.0" />
+                </div>
+
+                <div class="gauge">
+                    <p>ZFAR</p>
+                    <input id="ZFAR" type="range" min="50" max="200" value="100.0" />
+                </div>
+
+                <div class="gauge">
+                    <p>FOV</p>
+                    <input id="FOV" type="range" min="1" max="179" value="20" />
+                </div>
+            </div>
+
+            <div class="painelsection">
+                <div class="gauge">
+                    <p>X TRANSLATE</p>
+                    <input id="XTRANSLATE" type="range" min="-20" max="20" value="0" />
+                </div>
+                <div class="gauge">
+                    <p>Y TRANSLATE</p>
+                    <input id="YTRANSLATE" type="range" min="-20" max="20" value="0" />
+                </div>
+                <div class="gauge">
+                    <p>Z TRANSLATE</p>
+                    <input id="ZTRANSLATE" type="range" min="-100" max="10" value="-15" />
+                </div>
+            </div>
+
+
+
+            <div class="painelsection">
+                <div class="gauge">
+                    <p>XANGLE</p>
+                    <input id="XANGLE" type="range" min="0" max="360" value="0" step="1" />
+                </div>
+
+                <div class="gauge">
+                    <p>YANGLE</p>
+                    <input id="YANGLE" type="range" min="0" max="360" value="0" step="1" />
+                </div>
+
+                <div class="gauge">
+                    <p>ZANGLE</p>
+                    <input id="ZANGLE" type="range" min="0" max="360" value="0" step="1" />
+                </div>
+            </div>
+
+            <div class="painelsection">
+                <div class="gauge">
+                    <p>ROTATE X</p>
+                    <input type="checkbox" id="ROTX" checked>
+                </div>
+
+                <div class="gauge">
+                    <p>ROTATE Y</p>
+                    <input type="checkbox" id="ROTY" checked>
+                </div>
+
+                <div class="gauge">
+                    <p>ROTATE Z</p>
+                    <input type="checkbox" id="ROTZ" checked>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="mycanvas">
+            Browser nao suporta canvas
+        </canvas>
+    </div>
+</body>
+
+</html>
